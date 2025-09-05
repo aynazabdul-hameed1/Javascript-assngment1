@@ -143,26 +143,19 @@ var  price=600;
  document.write("<p>Total cost to buy 5 tickets to a movie is "+ price+"PKR</p>");
 // v
 var table=2;
-document.write("<h4>Table of "+table+"</h4>") ;
-document.write("<p>2x1= "+table+"</p>"); 
-table=2*2;
-document.write("<p>2x2= "+table+"</p>"); 
-table=2*3;
-document.write("<p>2x3= "+table+"</p>"); 
-table=2*4;
-document.write("<p>2x4= "+table+"</p>"); 
-table=2*5;
-document.write("<p>2x5= "+table+"</p>"); 
-table=2*6;
-document.write("<p>2x6= "+table+"</p>"); 
-table=2*7;
-document.write("<p>2x7= "+table+"</p>"); 
-table=2*8;
-document.write("<p>2x8= "+table+"</p>"); 
-table=2*9;
-document.write("<p>2x9= "+table+"</p>"); 
-table=2*10;
-document.write("<p>2x10= "+table+"</p>"); 
+document.write ("<h4>Table of "+table+"</h4>") ;
+document.write(table,"x 1 =",table*1,"<br>",
+table,"x 2 =",table*2,"<br>",
+table,"x 3 =",table*3,"<br>",
+table,"x 4 =",table*4,"<br>",
+table,"x 5 =",table*5,"<br>",
+table,"x 6 =",table*6,"<br>",
+table,"x 7 =",table*7,"<br>",
+table,"x 8 =",table*8,"<br>",
+table,"x 9 =",table*9,"<br>",
+table,"x 10 =",table*10,"<br><br>",
+)
+
 // vi)
 var CelsiusT1=25;
 var  FahrenheitT1=(CelsiusT1 * 9/5)+32;
@@ -183,7 +176,7 @@ document.write("<p>"+total+"</p>");
 // viii)
 var  totalM=980;
 var obtainedM=804;
-var per= totalM/obtainedM;
+var per= (totalM/obtainedM)*100;
 document.write("<h3> Marks Sheet</h3>")
 document.write("<p> Total marks" +totalM +"</p>")
 document.write("<p>  Obtained marks" +obtainedM +"</p>")
@@ -192,20 +185,44 @@ document.write(per +"%");
 // ix)
 
 // x)
-
+var number=7;
+var result=(number+5)*10/2;
+document.write("<br> <br>resulte of Qusetion 10 is ", result);
 // xi)
-
+var  currentYear=2025, birthYear=2006;
+var age1= currentYear-birthYear,age2=age1-1;
+document.write("<h1>Age Calculator</h1>Current Year is ",
+currentYear,"<br>Birth Year is ",birthYear,"<br>They are either ",age2," or ",age1," years old.");
 // xii)
+var _radius=20,pI=3.142;
+var circumference=2*pI*_radius, area=pI* _radius*_radius;
+document.write("<h1>The Geometrizer</h1> Radius of a circle is ",
+_radius,"<br>The circumference is : ",circumference,"<br>The area is :  ",area);
 
 // xiii)
-
-
+var favoriteSnack="Chocolet Bar",currentAge=15, maximumAge=65,amountperDay=3;
+var yearsRemaining=maximumAge-currentAge,
+daysRemaining=yearsRemaining*365,
+totalSnack=daysRemaining*amountperDay;
+document.write("<h1>The Lifetime Supply Calculator</h1> Favorite snack :",favoriteSnack,"<br>Current age : ",
+    currentAge,"<br> Estimated maximum age :  ",maximumAge,"<br> Amount of snacks per day : ",amountperDay,
+    "<br>You will need ",totalSnack," ",favoriteSnack," to last you until the ripe old age of ",maximumAge,". ");
 // ch=6-9 MATH EXPRESSIONS
 // i)
+var a=10;
+document.write("<h3>Resulte:</h3> The value of a is:",a,"<br>............................<br>");
+
+document.write(" The value of ++a is : ",++a,"<br>Now the value of a is : ", a,"<br>");
+
+document.write("<br> The value of ++a is : ",a++,"<br>Now the value of a is : ", a,"<br>");
+
+document.write("<br> The value of ++a is : ",--a,"<br>Now the value of a is : ", a,"<br>");
+
+document.write("<br> The value of ++a is : ",a--,"<br>Now the value of a is : ", a);
 
 // ii)
 var a = 2, b = 1; 
-document.write("<p>a is "+a+ "<br> b is"+b+"</p>");
+document.write("<br><br>a is "+a+ "<br> b is"+b+"</h5>");
 var result = --a - --b + ++b + b--; 
 //--a=1; - --b=0; + ++b=1 + b-- =1
 document.write("result is"+result );
@@ -216,27 +233,38 @@ var  user=prompt("Hello user \n please enter name");
 var table5=5;
 var  table5=+prompt("Enter a number to display its multiplication table");
 document.write("<h4>Table of "+table5+"</h4>") ;
-document.write("<p>5x1= "+table5+"</p>"); 
-table5=5*2;
-document.write("<p>5x2= "+table5+"</p>"); 
-table5=5*3;
-document.write("<p>5x3= "+table5+"</p>"); 
-table5=5*4;
-document.write("<p>5x4= "+table5+"</p>"); 
-table5=5*5;
-document.write("<p>5x5= "+table5+"</p>"); 
-table5=5*6;
-document.write("<p>5x6= "+table5+"</p>"); 
-table5=5*7;
-document.write("<p>5x7= "+table5+"</p>"); 
-table5=5*8;
-document.write("<p>5x8= "+table5+"</p>"); 
-table5=5*9;
-document.write("<p>5x9= "+table5+"</p>"); 
-table5=5*10;
-document.write("<p>5x10= "+table5+"</p>"); 
-
+document.write(table5," x 1 =",table5*1,"<br>",
+table5," x 2 =",table5*2,"<br>",
+table5," x 3 =",table5*3,"<br>",
+table5," x 4 =",table5*4,"<br>",
+table5," x 5 =",table5*5,"<br>",
+table5," x 6 =",table5*6,"<br>",
+table5," x 7 =",table5*7,"<br>",
+table5," x 8 =",table5*8,"<br>",
+table5," x 9 =",table5*9,"<br>",
+table5," x 10 =",table5*10,"<br><br>",
+);
 // vi)
+var subject1=prompt("Enter the name of subject1 :");
+var subject2=prompt("Enter the name of subject2 :");
+var subject3=prompt("Enter the name of subject3 :");
 
+var  totalMarksPerSubject=100;
 
+var  obtainedMarks1=+prompt("Enter obtained marks for ${subject1}:");
+var  obtainedMarks2=+prompt("Enter obtained marks for ${subject2}:");
+var  obtainedMarks3=+prompt("Enter obtained marks for ${subject3}:");
+
+var totalObtainedMarks=obtainedMarks1 +obtainedMarks2 +obtainedMarks3;
+var totalPossibleMarks=totalMarksPerSubject*3;
+var persentage=(totalObtainedMarks/totalPossibleMarks)*100;
+document.write(
+    "<table><tr><th>Subjects</th> <th> Total marks</th> <th> Obtained marks</th> <th> percentage</th></tr>",
+    "<tr><td>",subject1,"</td>","<td>",totalMarksPerSubject,"</td>","<td>", obtainedMarks1,"</td>","<td>",persentage,"%</td>","</tr>",
+     "<tr><td>",subject2,"</td>","<td>",totalMarksPerSubject,"</td>","<td>", obtainedMarks2,"</td>","<td>",persentage,"%</td>","</tr>",
+      "<tr><td>",subject3,"</td>","<td>",totalMarksPerSubject,"</td>","<td>", obtainedMarks3,"</td>","<td>",persentage,"%</td>","</tr>",
+
+      "<tr><td colspan='2'>",totalObtainedMarks,"</td>","<td colspan='2'>",totalPossibleMarks,"</td>","<td colspan='2'>", persentage.toFixed(2),"%</td></tr>",
+    "</table>"
+)
 // END
