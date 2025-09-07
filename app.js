@@ -183,6 +183,11 @@ document.write("<p>  Obtained marks" +obtainedM +"</p>")
 document.write(per +"%");
 
 // ix)
+var totalPKR=(10*104.80)+(25*28);
+
+document.write("<h1>Currency in PKR</h1><p>Total Currency in PKR is :</p> "+totalPKR)
+
+
 
 // x)
 var number=7;
